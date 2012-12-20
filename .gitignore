@@ -14,7 +14,12 @@ nbproject/
 /.htaccess
 /*.xml
 contao/update.phar.php
-files/*
+files/content/*
+files/images/*
+files/magazin/*
+files/sportnews/*
+files/teams/*
+files/tiny_templates/*
 assets/css/*
 assets/images/*
 assets/js/*
