@@ -1,0 +1,2 @@
+/* Contao Open Source CMS, (C) 2005-2012 Leo Feyer, LGPL license */
+var Theme={hoverRow:function(e,t){var n=$(e).getChildren();for(var r=0;r<n.length;r++)n[r].nodeName.toLowerCase()=="td"&&n[r].setStyle("background-color",t?"#ebfdd7":"")},hoverDiv:function(e,t){$(e).setStyle("background-color",t?"#ebfdd7":"")}};

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="<?php echo $this->language; ?>">
+<head>
+  <meta charset="<?php echo $this->charset; ?>">
+  <title><?php echo $this->pageTitle; ?> - <?php echo $this->mainTitle; ?></title>
+  <base href="<?php echo $this->base; ?>">
+  <meta name="robots" content="<?php echo $this->robots; ?>">
+  <meta name="description" content="<?php echo $this->description; ?>">
+  <meta name="keywords" content="<?php echo $this->keywords; ?>">
+  <link rel="stylesheet" href="files/css/global.css" media="screen">
+  <?php echo $this->viewport; ?>
+  <?php echo $this->framework; ?>
+  <?php echo $this->stylesheets; ?>
+  <?php echo $this->mooScripts; ?>
+  <script src="files/js/global.js"></script>
+  <?php echo $this->head; ?>
+  <!--[if lt IE 9]>
+  <script src="<?php echo TL_PLUGINS_URL; ?>assets/html5shiv/<?php echo HTML5SHIV; ?>/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body id="Sports" class="{{ua::class}}<?php if ($this->class): ?> <?php echo $this->class; ?><?php endif; ?>"<?php if ($this->onload): ?> onload="<?php echo $this->onload; ?>"<?php endif; ?>>
+  
+  <!-- @start: #NoScript -->
+  <noscript id="NoScript">
+  	<p><strong>Javascript deaktiviert:</strong> Um alle Features nutzen zu können, muss Javascript eingeschaltet sein. Unter Umständen sollten sie Ihren Browser aktualisieren.</p>
+  </noscript>
+  <!-- @end: #NoScript -->
+  
+  <div id="Page">
+    <div id="Header">
+      <a href="/" title="zur Startseite"><img src="files/images/logo-top.png" width="230" height="59"></a>
+      <h1 class="aux"><?php echo $this->pageTitle; ?> - <?php echo $this->mainTitle; ?></h1>
+      <div class="viAds ads468x60_top">
+        <img src="files/test.png">
+      </div>
+      <?php echo $this->header; ?>
+    </div>
+    
+    <div id="Content">
+      <? echo($this->main); ?>
+      <? echo($this->right); ?>
+    </div>
+    
+    <div id="Footer">
+      <?php echo $this->footer; ?>
+      <span class="copy">&copy; lokal-sports.de | <? echo(date("Y")); ?></span>
+
+      <div class="text">
+        Aktuelle Meldungen, Ergebnisse und Statistiken rund um den lokalen Sport, Fussball, Handball, Volleyball und weiteren 
+        Sportarten!<br />Ließ Artikel geschrieben von Sportlern, Funktionären, Vereinsmitglieder und Sportbegeisterten.
+      </div>
+
+      <ul id="Support">
+        <li class="first">Partner:</li>
+        <li>
+          <a href="http://www.agentur-vida.de" title="Agentur VIDA - Webdesign und Webentwicklung">
+            <img src="files/images/f_vida.png" alt="Agentur-VIDA" width="90" height="30">
+          </a>
+        </li>
+        <li>
+          <a href="http://www.volleyball-uckermark.de" title="Volleyball in der Uckermark">
+            <img src="files/images/f_vbu.png" alt="volleyball-uckermark.de" width="130" height="30">
+          </a>
+        </li>
+        <li>
+          <a href="http://www.va-triplett.de" title="Veranstaltungsagentur Triplett">
+            <img src="files/images/f_triplett" width="119" height="30">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+</body>
+</html>
